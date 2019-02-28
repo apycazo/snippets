@@ -1,0 +1,14 @@
+pluginManagement {
+  repositories {
+    mavenLocal()
+    gradlePluginPortal()
+  }
+}
+
+rootProject.name = 'snippets'
+include 'snippets-basic'
+include 'snippets-spring-cli'
+include 'snippets-jersey'
+include 'snippets-gradle-plugins'
+include 'snippets-conditional'
+

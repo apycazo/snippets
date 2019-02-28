@@ -1,0 +1,14 @@
+plugins {
+  id 'java-gradle-plugin'
+}
+
+version '1.0-SNAPSHOT'
+
+gradlePlugin {
+  plugins {
+    dependencyManager {
+      id = 'snippets.dependencies'
+      implementationClass = 'com.github.apycazo.snippets.gradle.plugins.ManagedDependenciesPlugin'
+    }
+  }
+}

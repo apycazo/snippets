@@ -1,0 +1,19 @@
+plugins {
+  id 'application'
+  id 'io.franzbecker.gradle-lombok' version '2.0'
+  id 'com.github.johnrengelman.shadow' version '4.0.2'
+}
+
+version '1.0-SNAPSHOT'
+
+application {
+  mainClassName "com.github.apycazo.snippets.spring.cli.CommandLineApp"
+}
+
+dependencies {
+  implementation logbackStack
+  implementation(
+    "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
+    "org.springframework:spring-context:${springVersion}"
+  )
+}
