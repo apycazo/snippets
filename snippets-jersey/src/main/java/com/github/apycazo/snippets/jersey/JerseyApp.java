@@ -56,7 +56,7 @@ public class JerseyApp extends ResourceConfig {
 
   public static Server configureServer(int port) {
     Server server = new Server(port);
-    String packageToScan = JerseyApp.class.getPackageName();
+    String packageToScan = JerseyApp.class.getPackage().getName();
     // --- rest api requires no session
     ServletContextHandler servletContextHandler = new ServletContextHandler(NO_SESSIONS);
     // --- configure context path and context handler
