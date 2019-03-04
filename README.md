@@ -1,5 +1,7 @@
 # Snippets
 
+[![Build Status](https://travis-ci.org/apycazo/snippets.svg?branch=master)](https://travis-ci.org/apycazo/snippets)
+
 Short demo projects to be used as reference.
 
 ## Contents

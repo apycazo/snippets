@@ -1,0 +1,29 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.3.RELEASE")
+  }
+}
+
+plugins {
+  id 'java'
+  id 'io.franzbecker.gradle-lombok' version '2.0'
+//  id 'com.github.johnrengelman.shadow' version '4.0.2'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+version '1.0-SNAPSHOT'
+
+bootJar {
+  baseName = "${project.name}"
+  version =  "${version}"
+}
+
+dependencies {
+  implementation("org.springframework.boot:spring-boot-starter-web")
+  testImplementation('org.springframework.boot:spring-boot-starter-test')
+}

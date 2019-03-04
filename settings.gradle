@@ -11,4 +11,5 @@ include 'snippets-spring-cli'
 include 'snippets-jersey'
 include 'snippets-gradle-plugins'
 include 'snippets-conditional'
+include 'snippets-spring-rest'
 

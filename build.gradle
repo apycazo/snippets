@@ -52,9 +52,17 @@ allprojects {
       "javax.xml.bind:jaxb-api:${jaxbApiVersion}"
     ]
 
+    jerseyLiteStack = [
+      "org.glassfish.jersey.containers:jersey-container-servlet:${jerseyVersion}",
+      "org.glassfish.jersey.media:jersey-media-json-jackson:${jerseyVersion}",
+      "org.glassfish.jersey.ext:jersey-spring4:${jerseyVersion}"
+    ]
+
     jettyStack = [
       "org.eclipse.jetty:jetty-server:${jettyVersion}",
-      "org.eclipse.jetty:jetty-servlet:${jettyVersion}"
+      "org.eclipse.jetty:jetty-servlet:${jettyVersion}",
+      "org.eclipse.jetty:jetty-annotations:${jettyVersion}",
+      "javax.xml.bind:jaxb-api:${jaxbApiVersion}"
     ]
 
     testStack = [

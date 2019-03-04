@@ -1,0 +1,8 @@
+spring.application.name: snippet-spring-rest
+server.port: 9000
+
+app:
+  serviceId: 101
+  author:
+    name: apycazo
+    id: dev

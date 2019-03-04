@@ -28,7 +28,8 @@ dependencies {
     "javax.xml.bind:jaxb-api:${jaxbApiVersion}",
     // embedded jetty
     "org.eclipse.jetty:jetty-server:${jettyVersion}",
-    "org.eclipse.jetty:jetty-servlet:${jettyVersion}"
+    "org.eclipse.jetty:jetty-servlet:${jettyVersion}",
+    "org.eclipse.jetty:jetty-annotations:${jettyVersion}"
   )
 
   testImplementation testStack
